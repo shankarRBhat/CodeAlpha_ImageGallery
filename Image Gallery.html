@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive, filterable image gallery.">
+  <title>Shanku's Image Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Shanku's Image Gallery home">
+        <span class="brand-mark" aria-hidden="true">S/</span>
+        <span>SHANKU'S IMAGE GALLERY</span>
+      </a>
+      <div class="header-meta"><span class="live-dot"></span> A personal collection</div>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">A collection of places, motion &amp; faces</p>
+        <h1 id="page-title">Shanku's<br><em>Image Gallery.</em></h1>
+        <p class="intro-copy">Browse the collection, filter by category, and open any image to look closer.</p>
+      </section>
+
+      <section class="gallery-section" aria-labelledby="gallery-heading">
+        <div class="gallery-toolbar">
+          <div>
+            <p class="section-kicker">The archive</p>
+            <h2 id="gallery-heading">Selected frames <span id="image-count">20</span></h2>
+          </div>
+          <nav class="filter-nav" aria-label="Filter images by category">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">Nature</button>
+            <button class="filter-button" type="button" data-filter="travel" aria-pressed="false">Travel</button>
+            <button class="filter-button" type="button" data-filter="cars" aria-pressed="false">Cars</button>
+            <button class="filter-button" type="button" data-filter="people" aria-pressed="false">People</button>
+          </nav>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <article class="gallery-item item-tall" data-category="cars" data-title="City glide" data-location="Cars collection" data-image="Images/car1.jpg"><button class="image-button" type="button" aria-label="Open City glide"><img src="Images/car1.jpg" alt="Automobile captured in a polished urban setting" loading="lazy"><span class="image-overlay"><span>01 / Cars</span><strong>City glide</strong></span></button></article>
+          <article class="gallery-item item-wide" data-category="nature" data-title="Green stillness" data-location="Nature collection" data-image="Images/nature1.jpg"><button class="image-button" type="button" aria-label="Open Green stillness"><img src="Images/nature1.jpg" alt="A calm natural scene filled with layered green tones" loading="lazy"><span class="image-overlay"><span>02 / Nature</span><strong>Green stillness</strong></span></button></article>
+          <article class="gallery-item" data-category="people" data-title="A quiet glance" data-location="People collection" data-image="Images/people1.jpg"><button class="image-button" type="button" aria-label="Open A quiet glance"><img src="Images/people1.jpg" alt="Portrait capturing a calm, direct glance" loading="lazy"><span class="image-overlay"><span>03 / People</span><strong>A quiet glance</strong></span></button></article>
+          <article class="gallery-item item-tall" data-category="travel" data-title="New route" data-location="Travel collection" data-image="Images/travel1.jpg"><button class="image-button" type="button" aria-label="Open New route"><img src="Images/travel1.jpg" alt="A memorable view from a journey" loading="lazy"><span class="image-overlay"><span>04 / Travel</span><strong>New route</strong></span></button></article>
+          <article class="gallery-item" data-category="cars" data-title="Built to move" data-location="Cars collection" data-image="Images/car2.jpg"><button class="image-button" type="button" aria-label="Open Built to move"><img src="Images/car2.jpg" alt="Detailed view of a stylish vehicle" loading="lazy"><span class="image-overlay"><span>05 / Cars</span><strong>Built to move</strong></span></button></article>
+          <article class="gallery-item item-wide" data-category="nature" data-title="Open air" data-location="Nature collection" data-image="Images/nature2.jpg"><button class="image-button" type="button" aria-label="Open Open air"><img src="Images/nature2.jpg" alt="Wide open landscape under natural light" loading="lazy"><span class="image-overlay"><span>06 / Nature</span><strong>Open air</strong></span></button></article>
+          <article class="gallery-item" data-category="people" data-title="In the moment" data-location="People collection" data-image="Images/people2.jpg"><button class="image-button" type="button" aria-label="Open In the moment"><img src="Images/people2.jpg" alt="Person photographed in an unguarded moment" loading="lazy"><span class="image-overlay"><span>07 / People</span><strong>In the moment</strong></span></button></article>
+          <article class="gallery-item" data-category="travel" data-title="Far from familiar" data-location="Travel collection" data-image="Images/travel2.jpg"><button class="image-button" type="button" aria-label="Open Far from familiar"><img src="Images/travel2.jpg" alt="A distinctive destination discovered while travelling" loading="lazy"><span class="image-overlay"><span>08 / Travel</span><strong>Far from familiar</strong></span></button></article>
+          <article class="gallery-item item-tall" data-category="cars" data-title="Road character" data-location="Cars collection" data-image="Images/car3.jpg"><button class="image-button" type="button" aria-label="Open Road character"><img src="Images/car3.jpg" alt="Vehicle detail showing strong road character" loading="lazy"><span class="image-overlay"><span>09 / Cars</span><strong>Road character</strong></span></button></article>
+          <article class="gallery-item item-wide" data-category="nature" data-title="Earth tones" data-location="Nature collection" data-image="Images/nature3.jpg"><button class="image-button" type="button" aria-label="Open Earth tones"><img src="Images/nature3.jpg" alt="Natural textures and earthy colors in close view" loading="lazy"><span class="image-overlay"><span>10 / Nature</span><strong>Earth tones</strong></span></button></article>
+          <article class="gallery-item" data-category="people" data-title="Soft portrait" data-location="People collection" data-image="Images/people3.jpg"><button class="image-button" type="button" aria-label="Open Soft portrait"><img src="Images/people3.jpg" alt="Softly lit portrait with a relaxed expression" loading="lazy"><span class="image-overlay"><span>11 / People</span><strong>Soft portrait</strong></span></button></article>
+          <article class="gallery-item item-tall" data-category="travel" data-title="Wanderer's view" data-location="Travel collection" data-image="Images/travel3.jpg"><button class="image-button" type="button" aria-label="Open Wanderer's view"><img src="Images/travel3.jpg" alt="A travel scene inviting a closer look" loading="lazy"><span class="image-overlay"><span>12 / Travel</span><strong>Wanderer's view</strong></span></button></article>
+          <article class="gallery-item" data-category="cars" data-title="Clean lines" data-location="Cars collection" data-image="Images/car4.jpg"><button class="image-button" type="button" aria-label="Open Clean lines"><img src="Images/car4.jpg" alt="Sleek vehicle lines highlighted in the frame" loading="lazy"><span class="image-overlay"><span>13 / Cars</span><strong>Clean lines</strong></span></button></article>
+          <article class="gallery-item item-wide" data-category="travel" data-title="Somewhere new" data-location="Travel collection" data-image="Images/travel4.jpg"><button class="image-button" type="button" aria-label="Open Somewhere new"><img src="Images/travel4.jpg" alt="A fresh perspective from somewhere new" loading="lazy"><span class="image-overlay"><span>14 / Travel</span><strong>Somewhere new</strong></span></button></article>
+          <article class="gallery-item" data-category="people" data-title="Everyday light" data-location="People collection" data-image="Images/people4.jpg"><button class="image-button" type="button" aria-label="Open Everyday light"><img src="Images/people4.jpg" alt="Person framed by gentle everyday light" loading="lazy"><span class="image-overlay"><span>15 / People</span><strong>Everyday light</strong></span></button></article>
+          <article class="gallery-item item-tall" data-category="people" data-title="Golden hour face" data-location="People collection" data-image="Images/people5.jpg"><button class="image-button" type="button" aria-label="Open Golden hour face"><img src="Images/people5.jpg" alt="Portrait glowing with warm golden-hour color" loading="lazy"><span class="image-overlay"><span>16 / People</span><strong>Golden hour face</strong></span></button></article>
+          <article class="gallery-item" data-category="nature" data-title="Morning meadow" data-location="Nature collection" data-image="Images/nature4.jpg"><button class="image-button" type="button" aria-label="Open Morning meadow"><img src="Images/nature4.jpg" alt="Fresh natural scene touched by morning light" loading="lazy"><span class="image-overlay"><span>17 / Nature</span><strong>Morning meadow</strong></span></button></article>
+          <article class="gallery-item item-wide" data-category="travel" data-title="A wider world" data-location="Travel collection" data-image="Images/travel5.jpg"><button class="image-button" type="button" aria-label="Open A wider world"><img src="Images/travel5.jpg" alt="A new destination opening into a wider world" loading="lazy"><span class="image-overlay"><span>18 / Travel</span><strong>A wider world</strong></span></button></article>
+          <article class="gallery-item" data-category="cars" data-title="Dust &amp; daylight" data-location="Cars collection" data-image="Images/car5.jpg"><button class="image-button" type="button" aria-label="Open Dust and daylight"><img src="Images/car5.jpg" alt="Vehicle catching bright daylight on the road" loading="lazy"><span class="image-overlay"><span>19 / Cars</span><strong>Dust &amp; daylight</strong></span></button></article>
+          <article class="gallery-item" data-category="nature" data-title="Unscripted" data-location="Nature collection" data-image="Images/nature5.jpg"><button class="image-button" type="button" aria-label="Open Unscripted"><img src="Images/nature5.jpg" alt="Unscripted natural textures shaped by changing light" loading="lazy"><span class="image-overlay"><span>20 / Nature</span><strong>Unscripted</strong></span></button></article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No frames found in this collection.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>SHANKU'S IMAGE GALLERY</span><span>Personal collection</span></footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous image">&#8592;</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="" alt="">
+      <figcaption><span id="lightbox-location"></span><strong id="lightbox-title"></strong></figcaption>
+    </figure>
+    <p class="lightbox-error" id="lightbox-error" hidden>Image could not be opened.</p>
+    <button class="lightbox-arrow lightbox-next" id="lightbox-next" type="button" aria-label="Next image">&#8594;</button>
+    <p class="lightbox-counter" id="lightbox-counter"></p>
+  </div>
+</body>
+</html>
